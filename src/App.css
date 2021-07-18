@@ -2,3 +2,11 @@
   text-align: center;
   margin: 30px 0px;
 }
+
+.App .container {
+  background-color: lightpink;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-family: "Century Gothic";
+  text-align: center;
+}
