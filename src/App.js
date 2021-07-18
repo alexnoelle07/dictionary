@@ -6,12 +6,13 @@ function App() {
     <div className="App">
       <div className="container">
       <header className="App-header">
+        DICTIONARY APP
       </header>
       <main>
         <Dictionary />
       </main>
 
-      <footer className="text-center">
+      <footer className="App-footer">
         Coded by Alex Noelle
       </footer>
       </div>
