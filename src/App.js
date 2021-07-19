@@ -13,7 +13,7 @@ function App() {
       </main>
 
       <footer className="App-footer">
-        Coded by Alex Noelle
+        <a href="https://github.com/alexnoelle07/dictionary">Open Source</a> and coded by Alex Noelle
       </footer>
       </div>
     </div>

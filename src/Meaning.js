@@ -6,11 +6,11 @@ export default function Meaning(props) {
     return(
         <div className="Meaning">
         <h4>
-           <em>{props.meaning.partOfSpeech}</em>
+           {props.meaning.partOfSpeech}
         </h4>
         {props.meaning.definitions.map(function(definition, index) {
             return (
-                <div key={index}>
+                <div key={index} className="index">
                     <p>
                     {definition.definition}
                     <br />

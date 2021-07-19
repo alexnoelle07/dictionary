@@ -1,0 +1,9 @@
+.Meaning h4 {
+  color: lightblue;
+  font-family: "Sacramento", cursive;
+  font-size: 35px;
+}
+
+.index em {
+  opacity: 0.7;
+}
