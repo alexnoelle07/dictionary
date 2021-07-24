@@ -17,3 +17,7 @@
   font-family: "Century Gothic";
   text-align: center;
 }
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+}
