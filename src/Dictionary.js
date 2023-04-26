@@ -19,12 +19,12 @@ export default function Dictionary() {
     }
 
     function search() {
-       let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+       let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleDictionaryResponse); 
 
-        let pexelsApiKey = "563492ad6f91700001000001c68c639afc034d828c8591d500aa7720";
+        let pexelsApiKey = "gpvlMXNkQqpXeRI0WQx2bT8cYvtHmYGbIyowjx8c3iYS9DtP7CKjMCos";
         let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
-        let headers = {"Authorization" : `Bearer ${pexelsApiKey}`}
+        let headers = { Authorization : `Bearer ${pexelsApiKey}` };
         axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
     }
     
