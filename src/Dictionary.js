@@ -22,12 +22,12 @@ export default function Dictionary() {
        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleDictionaryResponse); 
 
-        let pexelsApiKey = "gpvlMXNkQqpXeRI0WQx2bT8cYvtHmYGbIyowjx8c3iYS9DtP7CKjMCos";
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
-        let headers = { Authorization : `Bearer ${pexelsApiKey}` };
-        axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
-    }
+        let pexelsApiKey = "4b3tb94of7a98bd19e0a989daf02046c";
+        let pexelsApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${pexelsApiKey}`;
+
+    axios.get(pexelsApiUrl).then(handlePexelsResponse);
     
+    }
     function handleSubmit(event) {
         event.preventDefault(); 
         search();
